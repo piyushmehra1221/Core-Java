@@ -47,14 +47,45 @@ class A
     }
 }
 
+class B 
+{
+    Scanner sc=new Scanner(System.in);
+    void even()
+    {
+        System.out.println("enter num");
+        int e=sc.nextInt();
+        if(e%2==0)
+        {
+          System.out.println("even num");
+        }
+        else{
+            System.out.println("else");
+        }
+    }
+}
+
+class C
+{
+    Scanner sc=new Scanner(System.in);
+    void even()
+    {
+        System.out.println("enter num");
+        int e=sc.nextInt();
+        if(e%2!=0)
+        {
+          System.out.println("even num");
+        }
+        else{
+            System.out.println("else");
+        }
+    }
+}
+
 public class M_Maths {
     
     public static void main(String[] args) {
         
-        A k=new A();
-        k.add();
-        k.div();
-        k.multi();
-        k.sub();
+        B k=new B();
+        k.even();
     }
 }
