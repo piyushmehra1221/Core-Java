@@ -27,6 +27,36 @@ class A
     }
 }
 
+class B 
+{
+    void even(int n)
+    {
+        if(n%2==0)
+        {
+            System.out.println("even number");
+        }
+        else 
+        {
+            System.out.println("not ");
+        }
+    }
+}
+
+class C
+{
+    void odd(int num)
+    {
+        if(num%2!=0)
+        {
+            System.out.println("num odd");
+        }
+        else 
+        {
+            System.out.println("not ");
+        }
+    }
+}
+
 public class Methods5 {
     
     public static void main(String[] args) {
@@ -41,7 +71,21 @@ public class Methods5 {
         k.add(a, b);
         k.sub(a, b);
         k.div(a, b);
-        k.div(a, b);
+        k.multi(a, b);
+
+        B k1=new B();
+        Scanner bc=new Scanner(System.in);
+        System.out.println("enter num");
+        int n=bc.nextInt();
+        k1.even(n);
+
+        C k2=new C();
+        Scanner cc=new Scanner(System.in);
+        System.out.println("enter num");
+        int num=bc.nextInt();
+        k2.odd(num);
+
+
 
     }
 }
