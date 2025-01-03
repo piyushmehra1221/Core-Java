@@ -36,7 +36,10 @@ public class Multilevel {
     public static void main(String[] args) {
 
       
-      
+        C k=new D();
+        k.show1();
+        k.show2();
+        k.show3();
 
         
     }
